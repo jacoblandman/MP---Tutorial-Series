@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE03BCCC1E2556240024A0EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03BCCB1E2556240024A0EC /* AppDelegate.swift */; };
+		AE03BCCE1E2556240024A0EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03BCCD1E2556240024A0EC /* ViewController.swift */; };
+		AE03BCD11E2556240024A0EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE03BCCF1E2556240024A0EC /* Main.storyboard */; };
+		AE03BCD31E2556240024A0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE03BCD21E2556240024A0EC /* Assets.xcassets */; };
+		AE03BCD61E2556240024A0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE03BCD41E2556240024A0EC /* LaunchScreen.storyboard */; };
+		AE03BCE11E2556240024A0EC /* MiraclePillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03BCE01E2556240024A0EC /* MiraclePillTests.swift */; };
+		AE03BCEC1E2556240024A0EC /* MiraclePillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03BCEB1E2556240024A0EC /* MiraclePillUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE03BCDD1E2556240024A0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE03BCC01E2556240024A0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE03BCC71E2556240024A0EC;
+			remoteInfo = MiraclePill;
+		};
+		AE03BCE81E2556240024A0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE03BCC01E2556240024A0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE03BCC71E2556240024A0EC;
+			remoteInfo = MiraclePill;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE03BCC81E2556240024A0EC /* MiraclePill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiraclePill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE03BCCB1E2556240024A0EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE03BCCD1E2556240024A0EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE03BCD01E2556240024A0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE03BCD21E2556240024A0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE03BCD51E2556240024A0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE03BCD71E2556240024A0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE03BCDC1E2556240024A0EC /* MiraclePillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiraclePillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE03BCE01E2556240024A0EC /* MiraclePillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiraclePillTests.swift; sourceTree = "<group>"; };
+		AE03BCE21E2556240024A0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE03BCE71E2556240024A0EC /* MiraclePillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiraclePillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE03BCEB1E2556240024A0EC /* MiraclePillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiraclePillUITests.swift; sourceTree = "<group>"; };
+		AE03BCED1E2556240024A0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE03BCC51E2556240024A0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE03BCD91E2556240024A0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE03BCE41E2556240024A0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE03BCBF1E2556240024A0EC = {
+			isa = PBXGroup;
+			children = (
+				AE03BCCA1E2556240024A0EC /* MiraclePill */,
+				AE03BCDF1E2556240024A0EC /* MiraclePillTests */,
+				AE03BCEA1E2556240024A0EC /* MiraclePillUITests */,
+				AE03BCC91E2556240024A0EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE03BCC91E2556240024A0EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE03BCC81E2556240024A0EC /* MiraclePill.app */,
+				AE03BCDC1E2556240024A0EC /* MiraclePillTests.xctest */,
+				AE03BCE71E2556240024A0EC /* MiraclePillUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE03BCCA1E2556240024A0EC /* MiraclePill */ = {
+			isa = PBXGroup;
+			children = (
+				AE03BCCB1E2556240024A0EC /* AppDelegate.swift */,
+				AE03BCCD1E2556240024A0EC /* ViewController.swift */,
+				AE03BCCF1E2556240024A0EC /* Main.storyboard */,
+				AE03BCD21E2556240024A0EC /* Assets.xcassets */,
+				AE03BCD41E2556240024A0EC /* LaunchScreen.storyboard */,
+				AE03BCD71E2556240024A0EC /* Info.plist */,
+			);
+			path = MiraclePill;
+			sourceTree = "<group>";
+		};
+		AE03BCDF1E2556240024A0EC /* MiraclePillTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE03BCE01E2556240024A0EC /* MiraclePillTests.swift */,
+				AE03BCE21E2556240024A0EC /* Info.plist */,
+			);
+			path = MiraclePillTests;
+			sourceTree = "<group>";
+		};
+		AE03BCEA1E2556240024A0EC /* MiraclePillUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE03BCEB1E2556240024A0EC /* MiraclePillUITests.swift */,
+				AE03BCED1E2556240024A0EC /* Info.plist */,
+			);
+			path = MiraclePillUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE03BCC71E2556240024A0EC /* MiraclePill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE03BCF01E2556240024A0EC /* Build configuration list for PBXNativeTarget "MiraclePill" */;
+			buildPhases = (
+				AE03BCC41E2556240024A0EC /* Sources */,
+				AE03BCC51E2556240024A0EC /* Frameworks */,
+				AE03BCC61E2556240024A0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiraclePill;
+			productName = MiraclePill;
+			productReference = AE03BCC81E2556240024A0EC /* MiraclePill.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE03BCDB1E2556240024A0EC /* MiraclePillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE03BCF31E2556240024A0EC /* Build configuration list for PBXNativeTarget "MiraclePillTests" */;
+			buildPhases = (
+				AE03BCD81E2556240024A0EC /* Sources */,
+				AE03BCD91E2556240024A0EC /* Frameworks */,
+				AE03BCDA1E2556240024A0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE03BCDE1E2556240024A0EC /* PBXTargetDependency */,
+			);
+			name = MiraclePillTests;
+			productName = MiraclePillTests;
+			productReference = AE03BCDC1E2556240024A0EC /* MiraclePillTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE03BCE61E2556240024A0EC /* MiraclePillUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE03BCF61E2556240024A0EC /* Build configuration list for PBXNativeTarget "MiraclePillUITests" */;
+			buildPhases = (
+				AE03BCE31E2556240024A0EC /* Sources */,
+				AE03BCE41E2556240024A0EC /* Frameworks */,
+				AE03BCE51E2556240024A0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE03BCE91E2556240024A0EC /* PBXTargetDependency */,
+			);
+			name = MiraclePillUITests;
+			productName = MiraclePillUITests;
+			productReference = AE03BCE71E2556240024A0EC /* MiraclePillUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE03BCC01E2556240024A0EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jacob Landman";
+				TargetAttributes = {
+					AE03BCC71E2556240024A0EC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MBLBPAM74V;
+						ProvisioningStyle = Automatic;
+					};
+					AE03BCDB1E2556240024A0EC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MBLBPAM74V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE03BCC71E2556240024A0EC;
+					};
+					AE03BCE61E2556240024A0EC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MBLBPAM74V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE03BCC71E2556240024A0EC;
+					};
+				};
+			};
+			buildConfigurationList = AE03BCC31E2556240024A0EC /* Build configuration list for PBXProject "MiraclePill" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE03BCBF1E2556240024A0EC;
+			productRefGroup = AE03BCC91E2556240024A0EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE03BCC71E2556240024A0EC /* MiraclePill */,
+				AE03BCDB1E2556240024A0EC /* MiraclePillTests */,
+				AE03BCE61E2556240024A0EC /* MiraclePillUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE03BCC61E2556240024A0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE03BCD61E2556240024A0EC /* LaunchScreen.storyboard in Resources */,
+				AE03BCD31E2556240024A0EC /* Assets.xcassets in Resources */,
+				AE03BCD11E2556240024A0EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE03BCDA1E2556240024A0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE03BCE51E2556240024A0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE03BCC41E2556240024A0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE03BCCE1E2556240024A0EC /* ViewController.swift in Sources */,
+				AE03BCCC1E2556240024A0EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE03BCD81E2556240024A0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE03BCE11E2556240024A0EC /* MiraclePillTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE03BCE31E2556240024A0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE03BCEC1E2556240024A0EC /* MiraclePillUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE03BCDE1E2556240024A0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE03BCC71E2556240024A0EC /* MiraclePill */;
+			targetProxy = AE03BCDD1E2556240024A0EC /* PBXContainerItemProxy */;
+		};
+		AE03BCE91E2556240024A0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE03BCC71E2556240024A0EC /* MiraclePill */;
+			targetProxy = AE03BCE81E2556240024A0EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE03BCCF1E2556240024A0EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE03BCD01E2556240024A0EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE03BCD41E2556240024A0EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE03BCD51E2556240024A0EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE03BCEE1E2556240024A0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE03BCEF1E2556240024A0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE03BCF11E2556240024A0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MBLBPAM74V;
+				INFOPLIST_FILE = MiraclePill/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSB.MiraclePill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE03BCF21E2556240024A0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MBLBPAM74V;
+				INFOPLIST_FILE = MiraclePill/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSB.MiraclePill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AE03BCF41E2556240024A0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MBLBPAM74V;
+				INFOPLIST_FILE = MiraclePillTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSB.MiraclePillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiraclePill.app/MiraclePill";
+			};
+			name = Debug;
+		};
+		AE03BCF51E2556240024A0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MBLBPAM74V;
+				INFOPLIST_FILE = MiraclePillTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSB.MiraclePillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiraclePill.app/MiraclePill";
+			};
+			name = Release;
+		};
+		AE03BCF71E2556240024A0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MBLBPAM74V;
+				INFOPLIST_FILE = MiraclePillUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSB.MiraclePillUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiraclePill;
+			};
+			name = Debug;
+		};
+		AE03BCF81E2556240024A0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MBLBPAM74V;
+				INFOPLIST_FILE = MiraclePillUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSB.MiraclePillUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiraclePill;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE03BCC31E2556240024A0EC /* Build configuration list for PBXProject "MiraclePill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE03BCEE1E2556240024A0EC /* Debug */,
+				AE03BCEF1E2556240024A0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE03BCF01E2556240024A0EC /* Build configuration list for PBXNativeTarget "MiraclePill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE03BCF11E2556240024A0EC /* Debug */,
+				AE03BCF21E2556240024A0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE03BCF31E2556240024A0EC /* Build configuration list for PBXNativeTarget "MiraclePillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE03BCF41E2556240024A0EC /* Debug */,
+				AE03BCF51E2556240024A0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE03BCF61E2556240024A0EC /* Build configuration list for PBXNativeTarget "MiraclePillUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE03BCF71E2556240024A0EC /* Debug */,
+				AE03BCF81E2556240024A0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE03BCC01E2556240024A0EC /* Project object */;
+}
