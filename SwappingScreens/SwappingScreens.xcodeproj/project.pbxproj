@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AED480541E2599F2004CC28C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED480531E2599F2004CC28C /* AppDelegate.swift */; };
-		AED480561E2599F2004CC28C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED480551E2599F2004CC28C /* ViewController.swift */; };
-		AED480591E2599F2004CC28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED480571E2599F2004CC28C /* Main.storyboard */; };
+		AED480561E2599F2004CC28C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED480551E2599F2004CC28C /* LoginVC.swift */; };
 		AED4805B1E2599F2004CC28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED4805A1E2599F2004CC28C /* Assets.xcassets */; };
 		AED4805E1E2599F2004CC28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED4805C1E2599F2004CC28C /* LaunchScreen.storyboard */; };
 		AED480691E2599F2004CC28C /* SwappingScreensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED480681E2599F2004CC28C /* SwappingScreensTests.swift */; };
 		AED480741E2599F2004CC28C /* SwappingScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED480731E2599F2004CC28C /* SwappingScreensUITests.swift */; };
+		AED480821E259AED004CC28C /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED480811E259AED004CC28C /* MusicListVC.swift */; };
+		AED480841E259C7C004CC28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED480831E259C7C004CC28C /* Main.storyboard */; };
+		AED480861E259D7B004CC28C /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED480851E259D7B004CC28C /* PlaySongVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,7 @@
 /* Begin PBXFileReference section */
 		AED480501E2599F2004CC28C /* SwappingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED480531E2599F2004CC28C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AED480551E2599F2004CC28C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AED480581E2599F2004CC28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AED480551E2599F2004CC28C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		AED4805A1E2599F2004CC28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AED4805D1E2599F2004CC28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AED4805F1E2599F2004CC28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		AED4806F1E2599F2004CC28C /* SwappingScreensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwappingScreensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED480731E2599F2004CC28C /* SwappingScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingScreensUITests.swift; sourceTree = "<group>"; };
 		AED480751E2599F2004CC28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED480811E259AED004CC28C /* MusicListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVC.swift; sourceTree = "<group>"; };
+		AED480831E259C7C004CC28C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AED480851E259D7B004CC28C /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				AED480531E2599F2004CC28C /* AppDelegate.swift */,
-				AED480551E2599F2004CC28C /* ViewController.swift */,
-				AED480571E2599F2004CC28C /* Main.storyboard */,
+				AED480551E2599F2004CC28C /* LoginVC.swift */,
 				AED4805A1E2599F2004CC28C /* Assets.xcassets */,
 				AED4805C1E2599F2004CC28C /* LaunchScreen.storyboard */,
+				AED480831E259C7C004CC28C /* Main.storyboard */,
 				AED4805F1E2599F2004CC28C /* Info.plist */,
+				AED480811E259AED004CC28C /* MusicListVC.swift */,
+				AED480851E259D7B004CC28C /* PlaySongVC.swift */,
 			);
 			path = SwappingScreens;
 			sourceTree = "<group>";
@@ -235,9 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED480841E259C7C004CC28C /* Main.storyboard in Resources */,
 				AED4805E1E2599F2004CC28C /* LaunchScreen.storyboard in Resources */,
 				AED4805B1E2599F2004CC28C /* Assets.xcassets in Resources */,
-				AED480591E2599F2004CC28C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED480561E2599F2004CC28C /* ViewController.swift in Sources */,
+				AED480821E259AED004CC28C /* MusicListVC.swift in Sources */,
+				AED480861E259D7B004CC28C /* PlaySongVC.swift in Sources */,
+				AED480561E2599F2004CC28C /* LoginVC.swift in Sources */,
 				AED480541E2599F2004CC28C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +307,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AED480571E2599F2004CC28C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AED480581E2599F2004CC28C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AED4805C1E2599F2004CC28C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
