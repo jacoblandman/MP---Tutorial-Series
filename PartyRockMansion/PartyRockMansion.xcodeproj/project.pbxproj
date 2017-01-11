@@ -16,6 +16,8 @@
 		AED481681E26E4DA004CC28C /* PartyRockMansionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED481671E26E4DA004CC28C /* PartyRockMansionUITests.swift */; };
 		AED481791E26E96B004CC28C /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED481781E26E96B004CC28C /* still time.ttf */; };
 		AED4817C1E26EA24004CC28C /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4817B1E26EA24004CC28C /* VideoVC.swift */; };
+		AED4817E1E26EB53004CC28C /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4817D1E26EB53004CC28C /* PartyCell.swift */; };
+		AED481801E26EC53004CC28C /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4817F1E26EC53004CC28C /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		AED481691E26E4DA004CC28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED481781E26E96B004CC28C /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		AED4817B1E26EA24004CC28C /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		AED4817D1E26EB53004CC28C /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		AED4817F1E26EC53004CC28C /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		AED481751E26E639004CC28C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AED4817D1E26EB53004CC28C /* PartyCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		AED481761E26E63F004CC28C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AED4817F1E26EC53004CC28C /* PartyRock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -303,6 +309,8 @@
 			files = (
 				AED4817C1E26EA24004CC28C /* VideoVC.swift in Sources */,
 				AED4814A1E26E4DA004CC28C /* MainVC.swift in Sources */,
+				AED481801E26EC53004CC28C /* PartyRock.swift in Sources */,
+				AED4817E1E26EB53004CC28C /* PartyCell.swift in Sources */,
 				AED481481E26E4DA004CC28C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
