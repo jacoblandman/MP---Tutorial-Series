@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AED481481E26E4DA004CC28C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED481471E26E4DA004CC28C /* AppDelegate.swift */; };
-		AED4814A1E26E4DA004CC28C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED481491E26E4DA004CC28C /* ViewController.swift */; };
+		AED4814A1E26E4DA004CC28C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED481491E26E4DA004CC28C /* MainVC.swift */; };
 		AED4814D1E26E4DA004CC28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED4814B1E26E4DA004CC28C /* Main.storyboard */; };
 		AED4814F1E26E4DA004CC28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED4814E1E26E4DA004CC28C /* Assets.xcassets */; };
 		AED481521E26E4DA004CC28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED481501E26E4DA004CC28C /* LaunchScreen.storyboard */; };
 		AED4815D1E26E4DA004CC28C /* PartyRockMansionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4815C1E26E4DA004CC28C /* PartyRockMansionTests.swift */; };
 		AED481681E26E4DA004CC28C /* PartyRockMansionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED481671E26E4DA004CC28C /* PartyRockMansionUITests.swift */; };
+		AED481791E26E96B004CC28C /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED481781E26E96B004CC28C /* still time.ttf */; };
+		AED4817C1E26EA24004CC28C /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4817B1E26EA24004CC28C /* VideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		AED481441E26E4DA004CC28C /* PartyRockMansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockMansion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED481471E26E4DA004CC28C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AED481491E26E4DA004CC28C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AED481491E26E4DA004CC28C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		AED4814C1E26E4DA004CC28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AED4814E1E26E4DA004CC28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AED481511E26E4DA004CC28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		AED481631E26E4DA004CC28C /* PartyRockMansionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PartyRockMansionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED481671E26E4DA004CC28C /* PartyRockMansionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyRockMansionUITests.swift; sourceTree = "<group>"; };
 		AED481691E26E4DA004CC28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED481781E26E96B004CC28C /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		AED4817B1E26EA24004CC28C /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,14 @@
 		AED481461E26E4DA004CC28C /* PartyRockMansion */ = {
 			isa = PBXGroup;
 			children = (
+				AED4817A1E26E973004CC28C /* Files */,
+				AED481771E26E645004CC28C /* Controller */,
+				AED481761E26E63F004CC28C /* Model */,
+				AED481751E26E639004CC28C /* View */,
 				AED481471E26E4DA004CC28C /* AppDelegate.swift */,
-				AED481491E26E4DA004CC28C /* ViewController.swift */,
+				AED481501E26E4DA004CC28C /* LaunchScreen.storyboard */,
 				AED4814B1E26E4DA004CC28C /* Main.storyboard */,
 				AED4814E1E26E4DA004CC28C /* Assets.xcassets */,
-				AED481501E26E4DA004CC28C /* LaunchScreen.storyboard */,
 				AED481531E26E4DA004CC28C /* Info.plist */,
 			);
 			path = PartyRockMansion;
@@ -123,6 +130,37 @@
 				AED481691E26E4DA004CC28C /* Info.plist */,
 			);
 			path = PartyRockMansionUITests;
+			sourceTree = "<group>";
+		};
+		AED481751E26E639004CC28C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AED481761E26E63F004CC28C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AED481771E26E645004CC28C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AED481491E26E4DA004CC28C /* MainVC.swift */,
+				AED4817B1E26EA24004CC28C /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AED4817A1E26E973004CC28C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				AED481781E26E96B004CC28C /* still time.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED481521E26E4DA004CC28C /* LaunchScreen.storyboard in Resources */,
+				AED481791E26E96B004CC28C /* still time.ttf in Resources */,
 				AED4814F1E26E4DA004CC28C /* Assets.xcassets in Resources */,
 				AED4814D1E26E4DA004CC28C /* Main.storyboard in Resources */,
 			);
@@ -262,7 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED4814A1E26E4DA004CC28C /* ViewController.swift in Sources */,
+				AED4817C1E26EA24004CC28C /* VideoVC.swift in Sources */,
+				AED4814A1E26E4DA004CC28C /* MainVC.swift in Sources */,
 				AED481481E26E4DA004CC28C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
