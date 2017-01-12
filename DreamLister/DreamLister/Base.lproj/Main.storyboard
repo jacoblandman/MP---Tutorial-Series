@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="mwg-nF-nfj" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="mwg-nF-nfj" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mwg-nF-nfj" id="emv-hg-TJ2">
@@ -220,6 +220,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" red="0.91816327440000001" green="0.91816327440000001" blue="0.91816327440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="urF-Zg-fSI" eventType="touchUpInside" id="2Nr-mk-o3f"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKJ-qc-3nV">
                                 <rect key="frame" x="160" y="423" width="94" height="21"/>
@@ -262,6 +265,12 @@
                             <color key="tintColor" red="1" green="0.39781578000000001" blue="0.45771686709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="ChN-3r-eUN" id="a1X-qh-CE8"/>
+                        <outlet property="priceField" destination="wwq-L5-P02" id="MHL-TQ-RhJ"/>
+                        <outlet property="storePicker" destination="XNz-vi-hfX" id="fTI-5e-ksz"/>
+                        <outlet property="titleField" destination="hML-g8-ydi" id="yOa-X2-fIe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWn-va-Ktr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
