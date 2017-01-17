@@ -12,6 +12,7 @@ class PokemonDetailVC: UIViewController {
 
     var pokemon: Pokemon!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var mainImg: UIImageView!
     @IBOutlet weak var descriptionLbl: UILabel!
@@ -29,9 +30,19 @@ class PokemonDetailVC: UIViewController {
         super.viewDidLoad()
 
         nameLbl.text = pokemon.name.capitalized
+        pokedexLbl.text = "\(pokemon.pokedexId)"
+        
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        mainImg.image =  img
+        currentEvoImg.image = img
+        
+        view.isUserInteractionEnabled = false
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         
         pokemon.downloadPokemonDetails { [unowned self] in
             
+            print("Did arrive here?")
             // Whatever we write here will only be called after the network call is complete!
             self.updateUI()
         }
@@ -44,6 +55,28 @@ class PokemonDetailVC: UIViewController {
     }
     
     func updateUI() {
+        
+        heightLbl.text = pokemon.height
+        weightLbl.text = pokemon.weight
+        attackLbl.text = pokemon.attack
+        defenseLbl.text = pokemon.defense
+        typeLbl.text = pokemon.type
+        descriptionLbl.text = pokemon.description
+        
+        if pokemon.nextEvolutionId == "" {
+            
+            evoLbl.text = "No Evolutions"
+            nextEvoImg.isHidden = true
+        } else {
+            
+            nextEvoImg.isHidden = false
+            nextEvoImg.image = UIImage(named: "\(pokemon.nextEvolutionId)")
+            evoLbl.text = "Next Evolution: \(pokemon.nextEvolutionName.capitalized) - LVL \(pokemon.nextEvolutionLevel)"
+        }
+        
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        view.isUserInteractionEnabled = true
         
     }
 }

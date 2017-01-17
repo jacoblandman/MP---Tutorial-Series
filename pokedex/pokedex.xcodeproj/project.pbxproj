@@ -21,7 +21,6 @@
 		AE62189D1E2D7056006B3D10 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE62189C1E2D7056006B3D10 /* music.mp3 */; };
 		AE62189F1E2D8D6D006B3D10 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62189E1E2D8D6D006B3D10 /* PokemonDetailVC.swift */; };
 		AE6218A11E2DA0E0006B3D10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6218A01E2DA0E0006B3D10 /* Constants.swift */; };
-		AE6218A31E2DA3E9006B3D10 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6218A21E2DA3E9006B3D10 /* SwiftyJSON.swift */; };
 		D41B1BE7EDAE7C2FA4A05EE0 /* Pods_pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C433C78B8F2F0373D11D9C /* Pods_pokedex.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		AE62189C1E2D7056006B3D10 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		AE62189E1E2D8D6D006B3D10 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		AE6218A01E2DA0E0006B3D10 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		AE6218A21E2DA3E9006B3D10 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B415969D8C354E9D58B8814F /* Pods-pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokedex/Pods-pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +139,6 @@
 		AE62189B1E2D6F8F006B3D10 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				AE6218A21E2DA3E9006B3D10 /* SwiftyJSON.swift */,
 				AE6218961E2D6B6B006B3D10 /* csv.swift */,
 				AE6218A01E2DA0E0006B3D10 /* Constants.swift */,
 			);
@@ -288,7 +285,6 @@
 				AE6218951E2D6657006B3D10 /* PokeCell.swift in Sources */,
 				AE62188E1E2D61F2006B3D10 /* ViewController.swift in Sources */,
 				AE6218881E2D61F2006B3D10 /* AppDelegate.swift in Sources */,
-				AE6218A31E2DA3E9006B3D10 /* SwiftyJSON.swift in Sources */,
 				AE62189F1E2D8D6D006B3D10 /* PokemonDetailVC.swift in Sources */,
 				AE6218A11E2DA0E0006B3D10 /* Constants.swift in Sources */,
 				AE6218931E2D6226006B3D10 /* Pokemon.swift in Sources */,
