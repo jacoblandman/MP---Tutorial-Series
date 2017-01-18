@@ -13,12 +13,12 @@
 		AE1E3DFF1E3005ED003FDE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3DFD1E3005ED003FDE70 /* Main.storyboard */; };
 		AE1E3E011E3005ED003FDE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E001E3005ED003FDE70 /* Assets.xcassets */; };
 		AE1E3E041E3005ED003FDE70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E021E3005ED003FDE70 /* LaunchScreen.storyboard */; };
-		AE1E3E0C1E300612003FDE70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E0B1E300612003FDE70 /* GoogleService-Info.plist */; };
 		AE1E3E1F1E3007A4003FDE70 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E161E3007A4003FDE70 /* GeoFire.m */; };
 		AE1E3E201E3007A4003FDE70 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E181E3007A4003FDE70 /* GFBase32Utils.m */; };
 		AE1E3E211E3007A4003FDE70 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E1A1E3007A4003FDE70 /* GFGeoHash.m */; };
 		AE1E3E221E3007A4003FDE70 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E1C1E3007A4003FDE70 /* GFGeoHashQuery.m */; };
 		AE1E3E231E3007A4003FDE70 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E1E1E3007A4003FDE70 /* GFQuery.m */; };
+		AE1E3E2E1E300A97003FDE70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E2D1E300A97003FDE70 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		AE1E3E001E3005ED003FDE70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1E3E031E3005ED003FDE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1E3E051E3005ED003FDE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE1E3E0B1E300612003FDE70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AE1E3E0F1E3007A4003FDE70 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
 		AE1E3E101E3007A4003FDE70 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
 		AE1E3E111E3007A4003FDE70 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		AE1E3E1D1E3007A4003FDE70 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		AE1E3E1E1E3007A4003FDE70 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		AE1E3E2C1E300870003FDE70 /* pokefinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pokefinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE1E3E2D1E300A97003FDE70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 				AE1E3E001E3005ED003FDE70 /* Assets.xcassets */,
 				AE1E3E021E3005ED003FDE70 /* LaunchScreen.storyboard */,
 				AE1E3E051E3005ED003FDE70 /* Info.plist */,
-				AE1E3E0B1E300612003FDE70 /* GoogleService-Info.plist */,
+				AE1E3E2D1E300A97003FDE70 /* GoogleService-Info.plist */,
 				AE1E3E2C1E300870003FDE70 /* pokefinder-Bridging-Header.h */,
 			);
 			path = pokefinder;
@@ -216,7 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1E3E041E3005ED003FDE70 /* LaunchScreen.storyboard in Resources */,
-				AE1E3E0C1E300612003FDE70 /* GoogleService-Info.plist in Resources */,
+				AE1E3E2E1E300A97003FDE70 /* GoogleService-Info.plist in Resources */,
 				AE1E3E011E3005ED003FDE70 /* Assets.xcassets in Resources */,
 				AE1E3DFF1E3005ED003FDE70 /* Main.storyboard in Resources */,
 			);
