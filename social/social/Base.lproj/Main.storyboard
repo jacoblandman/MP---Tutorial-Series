@@ -93,7 +93,7 @@
                                         <rect key="frame" x="0.0" y="40" width="303" height="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHy-xQ-Byg" customClass="FancyBtn" customModule="social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="303" height="37"/>
@@ -102,6 +102,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhT-MA-UfR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -125,6 +128,10 @@
                             <constraint firstAttribute="trailing" secondItem="TCK-EV-rEz" secondAttribute="trailing" id="znh-C1-zu6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="NzC-P3-0cu" id="vwh-FG-hag"/>
+                        <outlet property="pwdField" destination="0NA-UU-CNr" id="UBG-JF-ic1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
