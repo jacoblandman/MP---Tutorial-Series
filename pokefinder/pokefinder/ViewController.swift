@@ -103,18 +103,48 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
 
     func createSighting(forLocation location: CLLocation, withPokemon pokeId: Int) {
-        geoFire.setLocation(location, forKey: "\(pokeId)")
+        var key = Geohash.encode(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, length: 10)
+        key = "\(key)\(pokeId)"
+        geoFire.setLocation(location, forKey: key)
     }
     
     func showSightingsOnMap(location: CLLocation) {
+        
+        //let annotations = mapView.annotations
+        //mapView.removeAnnotations(annotations)
+        
         let circleQuery = geoFire!.query(at: location, withRadius: 2.5)
         
         _ = circleQuery?.observe(GFEventType.keyEntered, with: { (key, location) in
             
             if let key = key, let location = location {
-                let anno = PokeAnnotation(coordinate: location.coordinate, pokeId: Int(key)!)
+                let keyLength = key.characters.count
+                let charc = Array(key.characters)
+                let idArray = charc.suffix(keyLength - 10)
+                var id: String = ""
+                for element in idArray { id.append(element) }
+                let anno = PokeAnnotation(coordinate: location.coordinate, pokeId: Int(id)!, key: key)
                 self.mapView.addAnnotation(anno)
                 
+            }
+            
+        })
+        
+        _ = circleQuery?.observe(GFEventType.keyExited, with: { (key, location) in
+
+             //if a key was deleted, then reload the sightings
+            print(key)
+            if let key = key {
+                print("removing pokemon with key \(key)")
+                let annotations = self.mapView.annotations
+                for annotation in annotations {
+                    if let anno = annotation as? PokeAnnotation {
+                        if anno.key == key {
+                            print("hello")
+                            self.mapView.removeAnnotation(annotation)
+                        }
+                    }
+                }
             }
         })
     }
@@ -122,23 +152,39 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
         if let anno = view.annotation as? PokeAnnotation {
-            let place = MKPlacemark(coordinate: anno.coordinate)
-            let destination = MKMapItem(placemark: place)
-            destination.name = "Pokemon Sighting"
-            let regionDistance: CLLocationDistance = 1000
-            let regionSpan = MKCoordinateRegionMakeWithDistance(anno.coordinate, regionDistance, regionDistance)
-            
-            let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center), MKLaunchOptionsMapSpanKey:  NSValue(mkCoordinateSpan: regionSpan.span), MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving] as [String : Any]
-            
-            MKMapItem.openMaps(with: [destination], launchOptions: options)
+            //print("about to remove key from geofire")
+            geoFire.removeKey("\(anno.key)")
+            //mapView.removeAnnotation(anno)
+            //view.removeFromSuperview()
         }
+
+        
+//        if let anno = view.annotation as? PokeAnnotation {
+//            print("anno should be removed")
+//            geoFire.removeKey("\(anno.pokeId)")
+//            self.mapView.removeAnnotation(view.annotation!)
+//        }
+        
+        
+        
+//        if let anno = view.annotation as? PokeAnnotation {
+//            let place = MKPlacemark(coordinate: anno.coordinate)
+//            let destination = MKMapItem(placemark: place)
+//            destination.name = "Pokemon Sighting"
+//            let regionDistance: CLLocationDistance = 1000
+//            let regionSpan = MKCoordinateRegionMakeWithDistance(anno.coordinate, regionDistance, regionDistance)
+//            
+//            let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center), MKLaunchOptionsMapSpanKey:  NSValue(mkCoordinateSpan: regionSpan.span), MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving] as [String : Any]
+//            
+//            MKMapItem.openMaps(with: [destination], launchOptions: options)
+//        }
     }
     
     @IBAction func spotRandomPokemon(_ sender: Any) {
         
         let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
         
-        let rand = arc4random_uniform(150) + 1
+        let rand = arc4random_uniform(1) + 1
         createSighting(forLocation: loc, withPokemon: Int(rand))
     }
 

@@ -20,6 +20,7 @@
 		AE1E3E231E3007A4003FDE70 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E1E1E3007A4003FDE70 /* GFQuery.m */; };
 		AE1E3E2E1E300A97003FDE70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E2D1E300A97003FDE70 /* GoogleService-Info.plist */; };
 		AE1E3E341E301437003FDE70 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E331E301437003FDE70 /* PokeAnnotation.swift */; };
+		AE1E3E361E303841003FDE70 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E3E351E303841003FDE70 /* Geohash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		AE1E3E2C1E300870003FDE70 /* pokefinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pokefinder-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE1E3E2D1E300A97003FDE70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AE1E3E331E301437003FDE70 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
+		AE1E3E351E303841003FDE70 /* Geohash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geohash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				AE1E3E001E3005ED003FDE70 /* Assets.xcassets */,
+				AE1E3E351E303841003FDE70 /* Geohash.swift */,
 				AE1E3E051E3005ED003FDE70 /* Info.plist */,
 				AE1E3E2D1E300A97003FDE70 /* GoogleService-Info.plist */,
 				AE1E3E2C1E300870003FDE70 /* pokefinder-Bridging-Header.h */,
@@ -318,6 +321,7 @@
 				AE1E3E211E3007A4003FDE70 /* GFGeoHash.m in Sources */,
 				AE1E3DFA1E3005ED003FDE70 /* AppDelegate.swift in Sources */,
 				AE1E3E1F1E3007A4003FDE70 /* GeoFire.m in Sources */,
+				AE1E3E361E303841003FDE70 /* Geohash.swift in Sources */,
 				AE1E3E221E3007A4003FDE70 /* GFGeoHashQuery.m in Sources */,
 				AE1E3E231E3007A4003FDE70 /* GFQuery.m in Sources */,
 			);

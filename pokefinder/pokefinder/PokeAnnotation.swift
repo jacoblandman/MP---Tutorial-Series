@@ -168,11 +168,13 @@ class PokeAnnotation: NSObject, MKAnnotation {
     var pokeId: Int
     var pokemonName: String
     var title: String?
+    var key: String
     
-    init(coordinate: CLLocationCoordinate2D, pokeId: Int) {
+    init(coordinate: CLLocationCoordinate2D, pokeId: Int, key: String) {
         self.coordinate = coordinate
         self.pokeId = pokeId
         self.pokemonName = pokemon[pokeId - 1].capitalized
         self.title = self.pokemonName
+        self.key = key
     }
 }
