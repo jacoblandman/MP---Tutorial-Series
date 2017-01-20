@@ -6,9 +6,13 @@ target 'social' do
   use_frameworks!
 
   # Pods for social
+  pod 'Firebase'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Auth'
   pod 'SwiftKeychainWrapper'
+  
 
 end
