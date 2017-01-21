@@ -131,15 +131,50 @@
                     <connections>
                         <outlet property="emailField" destination="NzC-P3-0cu" id="vwh-FG-hag"/>
                         <outlet property="pwdField" destination="0NA-UU-CNr" id="UBG-JF-ic1"/>
+                        <segue destination="maS-RY-DNK" kind="show" identifier="FeedVC" id="yzi-zs-0DA"/>
+                        <segue destination="maS-RY-DNK" kind="show" identifier="FeedVCNoAnimation" animates="NO" id="G8N-b8-1Kv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
+        <!--FeedVC-->
+        <scene sceneID="MZt-bm-NQt">
+            <objects>
+                <viewController id="maS-RY-DNK" customClass="FeedVC" customModule="social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ihd-65-l0U"/>
+                        <viewControllerLayoutGuide type="bottom" id="eVR-eY-qN8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZG7-vo-7L7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISo-zQ-zCM">
+                                <rect key="frame" x="154" y="318" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="maS-RY-DNK" eventType="touchUpInside" id="exQ-1R-c1w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQy-E5-9q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.5999999999999" y="138.98050974512745"/>
+        </scene>
     </scenes>
     <resources>
         <image name="devslopes-logo" width="150" height="94"/>
         <image name="f" width="352" height="328"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="G8N-b8-1Kv"/>
+    </inferredMetricsTieBreakers>
 </document>

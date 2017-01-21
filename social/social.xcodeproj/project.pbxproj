@@ -18,6 +18,7 @@
 		AE1E3E4B1E32900C003FDE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E4A1E32900C003FDE70 /* Assets.xcassets */; };
 		AE1E3E4E1E32900C003FDE70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E4C1E32900C003FDE70 /* LaunchScreen.storyboard */; };
 		AE1E3E561E32908C003FDE70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E551E32908C003FDE70 /* GoogleService-Info.plist */; };
+		AED455FB1E32D2F2006E7C0C /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED455FA1E32D2F2006E7C0C /* FeedVC.swift */; };
 		F7B6C6CE6D0C7883B9BDE5ED /* Pods_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8220F806FDD666F1CE993E /* Pods_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		AE1E3E4D1E32900C003FDE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1E3E4F1E32900C003FDE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE1E3E551E32908C003FDE70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AED455FA1E32D2F2006E7C0C /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				AE1E3E451E32900C003FDE70 /* SignInVC.swift */,
+				AED455FA1E32D2F2006E7C0C /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				AE1E3E461E32900C003FDE70 /* SignInVC.swift in Sources */,
 				AE11C1921E32A0D900FB06E7 /* RoundBtn.swift in Sources */,
 				AE1E3E441E32900C003FDE70 /* AppDelegate.swift in Sources */,
+				AED455FB1E32D2F2006E7C0C /* FeedVC.swift in Sources */,
 				AE11C18D1E329E8200FB06E7 /* FancyView.swift in Sources */,
 				AE11C1901E329EFE00FB06E7 /* Constants.swift in Sources */,
 				AE11C1961E32A2FE00FB06E7 /* FancyBtn.swift in Sources */,
