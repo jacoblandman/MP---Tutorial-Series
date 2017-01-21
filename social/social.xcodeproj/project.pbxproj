@@ -21,6 +21,7 @@
 		AED455FB1E32D2F2006E7C0C /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED455FA1E32D2F2006E7C0C /* FeedVC.swift */; };
 		AED455FD1E32ED46006E7C0C /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED455FC1E32ED46006E7C0C /* CircleImageView.swift */; };
 		AED455FF1E33DB6E006E7C0C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED455FE1E33DB6E006E7C0C /* PostCell.swift */; };
+		AED456021E33ED33006E7C0C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED456011E33ED33006E7C0C /* DataService.swift */; };
 		F7B6C6CE6D0C7883B9BDE5ED /* Pods_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8220F806FDD666F1CE993E /* Pods_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		AED455FA1E32D2F2006E7C0C /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		AED455FC1E32ED46006E7C0C /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		AED455FE1E33DB6E006E7C0C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		AED456011E33ED33006E7C0C /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		AE1E3E421E32900C003FDE70 /* social */ = {
 			isa = PBXGroup;
 			children = (
+				AED456001E33ED22006E7C0C /* Services */,
 				AE11C18E1E329EF100FB06E7 /* Utilities */,
 				AEF270BB1E3294620040C577 /* Resources */,
 				AEF270BA1E3294300040C577 /* Model */,
@@ -106,6 +109,14 @@
 				AE1E3E551E32908C003FDE70 /* GoogleService-Info.plist */,
 			);
 			path = social;
+			sourceTree = "<group>";
+		};
+		AED456001E33ED22006E7C0C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AED456011E33ED33006E7C0C /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		AEF270B81E3294250040C577 /* Controller */ = {
@@ -285,6 +296,7 @@
 				AE1E3E461E32900C003FDE70 /* SignInVC.swift in Sources */,
 				AE11C1921E32A0D900FB06E7 /* RoundBtn.swift in Sources */,
 				AE1E3E441E32900C003FDE70 /* AppDelegate.swift in Sources */,
+				AED456021E33ED33006E7C0C /* DataService.swift in Sources */,
 				AED455FB1E32D2F2006E7C0C /* FeedVC.swift in Sources */,
 				AE11C18D1E329E8200FB06E7 /* FancyView.swift in Sources */,
 				AE11C1901E329EFE00FB06E7 /* Constants.swift in Sources */,
