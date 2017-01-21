@@ -20,6 +20,7 @@
 		AE1E3E561E32908C003FDE70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE1E3E551E32908C003FDE70 /* GoogleService-Info.plist */; };
 		AED455FB1E32D2F2006E7C0C /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED455FA1E32D2F2006E7C0C /* FeedVC.swift */; };
 		AED455FD1E32ED46006E7C0C /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED455FC1E32ED46006E7C0C /* CircleImageView.swift */; };
+		AED455FF1E33DB6E006E7C0C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED455FE1E33DB6E006E7C0C /* PostCell.swift */; };
 		F7B6C6CE6D0C7883B9BDE5ED /* Pods_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8220F806FDD666F1CE993E /* Pods_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		AE1E3E551E32908C003FDE70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AED455FA1E32D2F2006E7C0C /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		AED455FC1E32ED46006E7C0C /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		AED455FE1E33DB6E006E7C0C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				AE11C1931E32A20800FB06E7 /* FancyField.swift */,
 				AE11C1951E32A2FE00FB06E7 /* FancyBtn.swift */,
 				AED455FC1E32ED46006E7C0C /* CircleImageView.swift */,
+				AED455FE1E33DB6E006E7C0C /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				AE11C18D1E329E8200FB06E7 /* FancyView.swift in Sources */,
 				AE11C1901E329EFE00FB06E7 /* Constants.swift in Sources */,
 				AE11C1961E32A2FE00FB06E7 /* FancyBtn.swift in Sources */,
+				AED455FF1E33DB6E006E7C0C /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
