@@ -226,7 +226,7 @@
                                     <constraint firstAttribute="bottom" secondItem="oHe-Za-XhM" secondAttribute="bottom" constant="8" id="tid-l1-7oW"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="387" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SHO-tg-hSe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="387" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SHO-tg-hSe">
                                 <rect key="frame" x="0.0" y="162" width="375" height="505"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -234,14 +234,14 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="387"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bei-Cr-Rkf" id="bhc-EA-eTA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="386"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="387"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-Gq-1Ig" customClass="FancyView" customModule="social" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="370"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="371"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tyE-We-FJ4">
-                                                            <rect key="frame" x="8" y="8" width="327" height="325.5"/>
+                                                            <rect key="frame" x="8" y="8" width="327" height="326.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gRw-Ap-5XM">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
@@ -269,10 +269,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qEZ-kk-Agu">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="199.5"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="327" height="200.5"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tTY-ZF-x80">
-                                                                    <rect key="frame" x="0.0" y="275.5" width="327" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="276.5" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="K38-ne-k67"/>
@@ -284,7 +284,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-Np-OM8">
-                                                            <rect key="frame" x="245" y="341.5" width="90" height="23.5"/>
+                                                            <rect key="frame" x="245" y="342.5" width="90" height="23.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhd-bk-aHp">
                                                                     <rect key="frame" x="0.0" y="0.0" width="37.5" height="23.5"/>
