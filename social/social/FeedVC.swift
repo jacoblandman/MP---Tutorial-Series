@@ -23,6 +23,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         
         DataService.ds.REF_POSTS.observe(FIRDataEventType.value, with: { (snapshot) in
+            
+            self.posts = []
+            
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
                     print("SNAP: \(snap)")
@@ -48,7 +51,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell {
             let post = posts[indexPath.row]
-            print("JACOB: \(post.caption)")
+            cell.configureCell(post: post)
             return cell
         } else {
             return UITableViewCell()
