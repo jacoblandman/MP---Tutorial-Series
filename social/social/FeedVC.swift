@@ -14,9 +14,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
 
     @IBOutlet weak var addImage: CircleImageView!
     @IBOutlet weak var tableView: UITableView!
-    var imagePicker: UIImagePickerController!
     
+    var imagePicker: UIImagePickerController!
     var posts = [Post]()
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +57,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell {
+
             let post = posts[indexPath.row]
-            cell.configureCell(post: post)
+            
+            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+            } else {
+                cell.configureCell(post: post)
+            }
+            
             return cell
         } else {
             return UITableViewCell()
@@ -83,5 +91,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         try! FIRAuth.auth()?.signOut()
         dismiss(animated: true, completion: nil)
+    }
+    
+    deinit {
+        print("JACOB: FeedVC is deinitialized")
     }
 }
