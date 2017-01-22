@@ -99,11 +99,16 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     
     @IBAction func postButtonTapped(_ sender: Any) {
+        // get rid of the keyboard if it is still up
+        captionField.resignFirstResponder()
+        
+        // make sure the caption has text
         guard let caption = captionField.text, caption != "" else {
             print("JACOB: Caption must be entered")
             return
         }
         
+        // make sure an image was selected
         guard let img = addImage.image, imageSelected else {
             print("JACOB: An image must be selected")
             return
@@ -121,9 +126,30 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 } else {
                     print("JACOB: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                        self.postToFirebase(imageUrl: url)
+                    }
                 }
             }
         }
+    }
+    
+    func postToFirebase(imageUrl: String) {
+        let post: Dictionary<String, AnyObject> = [
+            "caption": captionField.text! as AnyObject,
+            "imageUrl": imageUrl as AnyObject,
+            "likes": 0 as AnyObject
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        // clear the caption field and the image
+        captionField.text = ""
+        imageSelected = false
+        addImage.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
