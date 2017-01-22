@@ -10,20 +10,24 @@ import UIKit
 import SwiftKeychainWrapper
 import Firebase
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var addImage: CircleImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var captionField: FancyField!
     
     var imagePicker: UIImagePickerController!
     var posts = [Post]()
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    var imageSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.delegate = self
+        
+        captionField.delegate = self
         
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
@@ -75,6 +79,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             addImage.image = image
+            imageSelected = true
         } else {
             print("JESS: A valid image wasn't selected")
         }
@@ -93,6 +98,39 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func postButtonTapped(_ sender: Any) {
+        guard let caption = captionField.text, caption != "" else {
+            print("JACOB: Caption must be entered")
+            return
+        }
+        
+        guard let img = addImage.image, imageSelected else {
+            print("JACOB: An image must be selected")
+            return
+        }
+        
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
+            
+            DataService.ds.REF_POST_IMAGES.child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
+                if error != nil {
+                    print("JACOB: Unable to upload image to Firebase storage")
+                } else {
+                    print("JACOB: Successfully uploaded image to Firebase storage")
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                }
+            }
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+     
     deinit {
         print("JACOB: FeedVC is deinitialized")
     }
