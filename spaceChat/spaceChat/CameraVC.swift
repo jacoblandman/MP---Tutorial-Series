@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CameraVC: CameraViewController {
+class CameraVC: CameraViewController, AAPLCameraVCDelegate {
 
     @IBOutlet weak var previewView: PreviewView!
     @IBOutlet weak var cameraButton: UIButton!
@@ -17,10 +17,11 @@ class CameraVC: CameraViewController {
     @IBOutlet weak var resumeButton: UIButton!
     
     override func viewDidLoad() {
+        
+        delegate = self
+        
         _previewView = previewView
-        _cameraButton = cameraButton
         _cameraUnavailableLabel = cameraUnavailableLabel
-        _recordButton = recordButton
         _resumeButton = resumeButton
         
         super.viewDidLoad()
@@ -33,6 +34,24 @@ class CameraVC: CameraViewController {
     
     @IBAction func changeCameraBtnPressed(_ sender: Any) {
         changeCamera()
+    }
+    
+    func shouldEnableCameraUI(_ enable: Bool) {
+        print("Should enable camera UI: \(enable)")
+        cameraButton.isEnabled = enable
+    }
+    
+    func shouldEnableRecordUI(_ enable: Bool) {
+        print("Should enable record UI: \(enable)")
+        recordButton.isEnabled = enable
+    }
+    
+    func recordingHasStarted() {
+        print("Recording has started")
+    }
+    
+    func canStartRecording() {
+        print("Can start recording")
     }
 }
 

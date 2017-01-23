@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "spaceChat/CameraViewController.swift"
-            timestampString = "506902135.051807"
+            timestampString = "506903770.066541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
             landmarkName = "configureSession()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "spaceChat/CameraViewController.swift"
-            timestampString = "506902135.051807"
+            timestampString = "506903770.066541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "629"
-            endingLineNumber = "629"
+            startingLineNumber = "627"
+            endingLineNumber = "627"
             landmarkName = "toggleMovieRecording()"
             landmarkType = "7">
          </BreakpointContent>

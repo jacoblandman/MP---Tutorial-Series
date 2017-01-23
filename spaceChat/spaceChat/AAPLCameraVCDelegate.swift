@@ -10,5 +10,12 @@ import Foundation
 
 protocol AAPLCameraVCDelegate {
     
+    func shouldEnableCameraUI(_ enable: Bool)
+    
+    func shouldEnableRecordUI(_ enable: Bool)
+    
+    func recordingHasStarted()
+    
+    func canStartRecording()
     
 }
