@@ -11,23 +11,28 @@ import UIKit
 class CameraVC: CameraViewController {
 
     @IBOutlet weak var previewView: PreviewView!
-    @IBOutlet weak var captureModeControl: UISegmentedControl!
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var cameraUnavailableLabel: UILabel!
-    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var resumeButton: UIButton!
     
     override func viewDidLoad() {
-        self._previewView = previewView
-        self._captureModeControl = captureModeControl
-        self._cameraButton = cameraButton
-        self._cameraUnavailableLabel = cameraUnavailableLabel
-        self._photoButton = photoButton
-        self._recordButton = recordButton
-        self._resumeButton = resumeButton
+        _previewView = previewView
+        _cameraButton = cameraButton
+        _cameraUnavailableLabel = cameraUnavailableLabel
+        _recordButton = recordButton
+        _resumeButton = resumeButton
         
         super.viewDidLoad()
+    }
+    
+    @IBAction func recordBtnPressed(_ sender: Any) {
+        //toggleToMovie()
+        toggleMovieRecording()
+    }
+    
+    @IBAction func changeCameraBtnPressed(_ sender: Any) {
+        changeCamera()
     }
 }
 

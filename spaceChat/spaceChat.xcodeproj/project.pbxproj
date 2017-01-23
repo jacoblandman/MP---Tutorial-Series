@@ -15,6 +15,7 @@
 		AE90E4211E3678AA000FD374 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E41E1E3678AA000FD374 /* CameraViewController.swift */; };
 		AE90E4221E3678AA000FD374 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E41F1E3678AA000FD374 /* PhotoCaptureDelegate.swift */; };
 		AE90E4231E3678AA000FD374 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E4201E3678AA000FD374 /* PreviewView.swift */; };
+		AE90E4291E368F6E000FD374 /* AAPLCameraVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E4281E368F6E000FD374 /* AAPLCameraVCDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AE90E41E1E3678AA000FD374 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		AE90E41F1E3678AA000FD374 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		AE90E4201E3678AA000FD374 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		AE90E4281E368F6E000FD374 /* AAPLCameraVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPLCameraVCDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		AE90E40B1E367404000FD374 /* spaceChat */ = {
 			isa = PBXGroup;
 			children = (
+				AE90E4271E368F3D000FD374 /* Protocols */,
 				AE90E4261E3678B8000FD374 /* Model */,
 				AE90E4251E3678B4000FD374 /* View */,
 				AE90E4241E3678AD000FD374 /* Controller */,
@@ -95,6 +98,14 @@
 				AE90E41F1E3678AA000FD374 /* PhotoCaptureDelegate.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		AE90E4271E368F3D000FD374 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE90E4281E368F6E000FD374 /* AAPLCameraVCDelegate.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 				AE90E40F1E367404000FD374 /* CameraVC.swift in Sources */,
 				AE90E40D1E367404000FD374 /* AppDelegate.swift in Sources */,
 				AE90E4221E3678AA000FD374 /* PhotoCaptureDelegate.swift in Sources */,
+				AE90E4291E368F6E000FD374 /* AAPLCameraVCDelegate.swift in Sources */,
 				AE90E4211E3678AA000FD374 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
