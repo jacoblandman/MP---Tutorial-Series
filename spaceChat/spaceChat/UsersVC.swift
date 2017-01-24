@@ -117,12 +117,12 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     print("Error uploading video: \(error?.localizedDescription)")
                 } else {
                     let downloadURL = meta!.downloadURL()
-                    print(downloadURL)
+                    DataService.instance.sendMediaPullRequest(senderUID: FIRAuth.auth()!.currentUser!.uid, sendingTo: self.selectedUsers, mediaURL: downloadURL!, textSnipped: "Coding today was Legit!")
                     // save this somewhere
                     
-                    self.dismiss(animated: true, completion: nil)
                 }
             })
+            self.dismiss(animated: true, completion: nil)
         } else if let snap = _snapData {
             let ref = DataService.instance.imagesStorageRef.child("\(NSUUID().uuidString).jpg")
             _ = ref.put(snap, metadata: nil, completion: { (meta, error) in
@@ -131,10 +131,9 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 } else {
                     let downloadURL = meta!.downloadURL()
                     // save this somewhere
-                    
-                    self.dismiss(animated: true, completion: nil)
                 }
             })
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
