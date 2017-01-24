@@ -561,6 +561,8 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 					}
 				}
 			)
+            
+            photoCaptureDelegate.delegate = self.delegate
 			
 			/*
 				The Photo Output keeps a weak reference to the photo capture delegate so
@@ -686,9 +688,13 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 		if error != nil {
 			print("Movie file finishing error: \(error)")
 			success = (((error as NSError).userInfo[AVErrorRecordingSuccessfullyFinishedKey] as AnyObject).boolValue)!
+            self.delegate.videoRecordingFailed()
 		}
 		
 		if success {
+            
+            self.delegate.videoRecordingComplete(videoURL: outputFileURL as NSURL)
+            /*
 			// Check authorization status.
 			PHPhotoLibrary.requestAuthorization { status in
 				if status == .authorized {
@@ -710,8 +716,10 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 					cleanup()
 				}
 			}
+             */
 		}
 		else {
+            self.delegate.videoRecordingFailed()
 			cleanup()
 		}
 		

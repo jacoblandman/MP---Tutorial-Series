@@ -18,4 +18,12 @@ protocol AAPLCameraVCDelegate {
     
     func canStartRecording()
     
+    func videoRecordingComplete(videoURL: NSURL)
+    
+    func videoRecordingFailed()
+    
+    func snapshotTaken(snapshotData: NSData)
+    
+    func snapshotFailed()
+    
 }

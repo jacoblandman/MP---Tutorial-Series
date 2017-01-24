@@ -21,6 +21,8 @@ class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
 	private var photoData: Data? = nil
 	
 	private var livePhotoCompanionMovieURL: URL? = nil
+    
+    var delegate: AAPLCameraVCDelegate!
 
 	init(with requestedPhotoSettings: AVCapturePhotoSettings, willCapturePhotoAnimation: @escaping () -> (), capturingLivePhoto: @escaping (Bool) -> (), completed: @escaping (PhotoCaptureDelegate) -> ()) {
 		self.requestedPhotoSettings = requestedPhotoSettings
@@ -86,10 +88,15 @@ class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
 		
 		guard let photoData = photoData else {
 			print("No photo data resource")
+            self.delegate.snapshotFailed()
 			didFinish()
 			return
 		}
 		
+        self.delegate.snapshotTaken(snapshotData: photoData as NSData)
+        didFinish()
+        
+        /*
 		PHPhotoLibrary.requestAuthorization { [unowned self] status in
 			if status == .authorized {
 				PHPhotoLibrary.shared().performChanges({ [unowned self] in
@@ -114,6 +121,6 @@ class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
 			else {
 				self.didFinish()
 			}
-		}
+		} */
 	}
 }
