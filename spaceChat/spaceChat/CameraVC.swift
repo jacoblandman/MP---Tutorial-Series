@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CameraVC: CameraViewController, AAPLCameraVCDelegate {
 
@@ -25,6 +26,16 @@ class CameraVC: CameraViewController, AAPLCameraVCDelegate {
         _resumeButton = resumeButton
         
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        performSegue(withIdentifier: "LoginVC", sender: nil)
+//        guard FIRAuth.auth()?.currentUser != nil else {
+//            // load login vc
+//            performSegue(withIdentifier: "LoginVC", sender: nil)
+//            return
+//        }
     }
     
     @IBAction func recordBtnPressed(_ sender: Any) {
