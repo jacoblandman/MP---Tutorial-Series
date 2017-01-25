@@ -41,3 +41,5 @@ Thumbs.db
 *.xcuserstate
 *.plist
 GoogleService-Info*
+*.xcbkptlist*
+*.pbxproj*
