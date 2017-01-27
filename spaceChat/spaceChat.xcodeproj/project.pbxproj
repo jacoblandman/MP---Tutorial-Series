@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31249C09960CDB785626E6BA /* Pods_spaceChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B32BC734F0EBA6B395CCFF /* Pods_spaceChat.framework */; };
 		AE90E40D1E367404000FD374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E40C1E367404000FD374 /* AppDelegate.swift */; };
 		AE90E40F1E367404000FD374 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E40E1E367404000FD374 /* CameraVC.swift */; };
 		AE90E4121E367404000FD374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE90E4101E367404000FD374 /* Main.storyboard */; };
@@ -30,6 +31,9 @@
 		AE90E41F1E3678AA000FD374 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		AE90E4201E3678AA000FD374 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		AE90E4281E368F6E000FD374 /* AAPLCameraVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPLCameraVCDelegate.swift; sourceTree = "<group>"; };
+		D8B32BC734F0EBA6B395CCFF /* Pods_spaceChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spaceChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9098F32FA78C9301BCB0D45 /* Pods-spaceChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spaceChat/Pods-spaceChat.debug.xcconfig"; sourceTree = "<group>"; };
+		FD798DE7036681E97E9BA235 /* Pods-spaceChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-spaceChat/Pods-spaceChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31249C09960CDB785626E6BA /* Pods_spaceChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74F128708280A3FA876ECEEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B32BC734F0EBA6B395CCFF /* Pods_spaceChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE90E4001E367404000FD374 = {
 			isa = PBXGroup;
 			children = (
 				AE90E40B1E367404000FD374 /* spaceChat */,
 				AE90E40A1E367404000FD374 /* Products */,
+				BF4AA3FA06A3041049B5F58E /* Pods */,
+				74F128708280A3FA876ECEEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +123,15 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		BF4AA3FA06A3041049B5F58E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9098F32FA78C9301BCB0D45 /* Pods-spaceChat.debug.xcconfig */,
+				FD798DE7036681E97E9BA235 /* Pods-spaceChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE90E41B1E367404000FD374 /* Build configuration list for PBXNativeTarget "spaceChat" */;
 			buildPhases = (
+				006BBF15FE491B7592DAE89B /* [CP] Check Pods Manifest.lock */,
 				AE90E4051E367404000FD374 /* Sources */,
 				AE90E4061E367404000FD374 /* Frameworks */,
 				AE90E4071E367404000FD374 /* Resources */,
+				B252178D761F5302BF02697B /* [CP] Embed Pods Frameworks */,
+				F4F231B53C72B2DD5DE2107A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,6 +202,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		006BBF15FE491B7592DAE89B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B252178D761F5302BF02697B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spaceChat/Pods-spaceChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F231B53C72B2DD5DE2107A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spaceChat/Pods-spaceChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE90E4051E367404000FD374 /* Sources */ = {
@@ -307,6 +382,7 @@
 		};
 		AE90E41C1E367404000FD374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9098F32FA78C9301BCB0D45 /* Pods-spaceChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E294R2UKFW;
@@ -320,6 +396,7 @@
 		};
 		AE90E41D1E367404000FD374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD798DE7036681E97E9BA235 /* Pods-spaceChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E294R2UKFW;

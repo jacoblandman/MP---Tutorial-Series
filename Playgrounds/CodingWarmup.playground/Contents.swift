@@ -28,3 +28,16 @@ let arr1 = ["a","b","c","d","e"]
 let arr2 = ["bo","ro","me","lo","fa","se"]
 
 print(combineArray(arr1, with: arr2))
+
+var alternate1:[String] = ["a","b","c"]
+var alternate2:[String] = ["a","b","c"]
+
+
+func alternatingArray() {
+    let set = Set(alternate1 + alternate2)
+    let aA = Set(alternate1 + alternate2).sorted(by: >)
+    print(aA)
+    
+    
+}
+alternatingArray()

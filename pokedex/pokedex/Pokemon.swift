@@ -219,6 +219,7 @@ class Pokemon {
                             }
                         }
                     }
+                    //completed()
                 } // end if let dict = val
             
             case .failure(let error):
