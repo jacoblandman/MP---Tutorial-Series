@@ -13,6 +13,7 @@
 		AEB9CA9F1E41461000C41F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB9CA9D1E41461000C41F1A /* Main.storyboard */; };
 		AEB9CAA11E41461000C41F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB9CAA01E41461000C41F1A /* Assets.xcassets */; };
 		AEB9CAA41E41461000C41F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB9CAA21E41461000C41F1A /* LaunchScreen.storyboard */; };
+		AEB9CAAE1E41466800C41F1A /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAAD1E41466800C41F1A /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AEB9CAA01E41461000C41F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB9CAA31E41461000C41F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB9CAA51E41461000C41F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB9CAAC1E41466800C41F1A /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		AEB9CAAD1E41466800C41F1A /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,13 @@
 		AEB9CA931E41461000C41F1A /* DevslopesTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				AEB9CAB21E41468A00C41F1A /* Resources */,
+				AEB9CAB11E41467900C41F1A /* Controller */,
+				AEB9CAB01E41467500C41F1A /* View */,
+				AEB9CAAF1E41466D00C41F1A /* Model */,
+				AEB9CAAB1E41464E00C41F1A /* Services */,
 				AEB9CA971E41461000C41F1A /* AppDelegate.h */,
 				AEB9CA981E41461000C41F1A /* AppDelegate.m */,
-				AEB9CA9A1E41461000C41F1A /* ViewController.h */,
-				AEB9CA9B1E41461000C41F1A /* ViewController.m */,
-				AEB9CA9D1E41461000C41F1A /* Main.storyboard */,
-				AEB9CAA01E41461000C41F1A /* Assets.xcassets */,
-				AEB9CAA21E41461000C41F1A /* LaunchScreen.storyboard */,
-				AEB9CAA51E41461000C41F1A /* Info.plist */,
 				AEB9CA941E41461000C41F1A /* Supporting Files */,
 			);
 			path = DevslopesTutorials;
@@ -77,6 +79,49 @@
 				AEB9CA951E41461000C41F1A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEB9CAAB1E41464E00C41F1A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AEB9CAAC1E41466800C41F1A /* HTTPService.h */,
+				AEB9CAAD1E41466800C41F1A /* HTTPService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		AEB9CAAF1E41466D00C41F1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AEB9CAB01E41467500C41F1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEB9CA9D1E41461000C41F1A /* Main.storyboard */,
+				AEB9CAA21E41461000C41F1A /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AEB9CAB11E41467900C41F1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEB9CA9A1E41461000C41F1A /* ViewController.h */,
+				AEB9CA9B1E41461000C41F1A /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AEB9CAB21E41468A00C41F1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEB9CAA01E41461000C41F1A /* Assets.xcassets */,
+				AEB9CAA51E41461000C41F1A /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB9CA9C1E41461000C41F1A /* ViewController.m in Sources */,
+				AEB9CAAE1E41466800C41F1A /* HTTPService.m in Sources */,
 				AEB9CA991E41461000C41F1A /* AppDelegate.m in Sources */,
 				AEB9CA961E41461000C41F1A /* main.m in Sources */,
 			);
