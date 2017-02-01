@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  Video.m
 //  DevslopesTutorials
 //
 //  Created by Jacob Landman on 1/31/17.
 //  Copyright © 2017 Jacob Landman. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Video.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-
+@implementation Video
 
 @end
-

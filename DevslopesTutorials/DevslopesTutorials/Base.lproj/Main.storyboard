@@ -32,8 +32,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="109" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DZL-yW-6u6">
                                 <rect key="frame" x="16" y="38" width="343" height="629"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="109" id="Zh4-nY-b0f" customClass="VideoCell">
                                         <rect key="frame" x="0.0" y="28" width="343" height="109"/>
@@ -113,6 +112,9 @@
                             <constraint firstAttribute="trailing" secondItem="4aZ-kk-u5L" secondAttribute="trailing" id="zTF-q6-Ud1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="DZL-yW-6u6" id="xRh-0k-Wb6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
