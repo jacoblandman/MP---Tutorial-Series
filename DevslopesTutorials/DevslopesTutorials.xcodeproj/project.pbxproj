@@ -14,6 +14,7 @@
 		AEB9CAA11E41461000C41F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB9CAA01E41461000C41F1A /* Assets.xcassets */; };
 		AEB9CAA41E41461000C41F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB9CAA21E41461000C41F1A /* LaunchScreen.storyboard */; };
 		AEB9CAAE1E41466800C41F1A /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAAD1E41466800C41F1A /* HTTPService.m */; };
+		AEB9CAB51E415B2A00C41F1A /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAB41E415B2A00C41F1A /* VideoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		AEB9CAA51E41461000C41F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB9CAAC1E41466800C41F1A /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
 		AEB9CAAD1E41466800C41F1A /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		AEB9CAB31E415B2A00C41F1A /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		AEB9CAB41E415B2A00C41F1A /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 			children = (
 				AEB9CA9D1E41461000C41F1A /* Main.storyboard */,
 				AEB9CAA21E41461000C41F1A /* LaunchScreen.storyboard */,
+				AEB9CAB31E415B2A00C41F1A /* VideoCell.h */,
+				AEB9CAB41E415B2A00C41F1A /* VideoCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB9CA9C1E41461000C41F1A /* ViewController.m in Sources */,
+				AEB9CAB51E415B2A00C41F1A /* VideoCell.m in Sources */,
 				AEB9CAAE1E41466800C41F1A /* HTTPService.m in Sources */,
 				AEB9CA991E41461000C41F1A /* AppDelegate.m in Sources */,
 				AEB9CA961E41461000C41F1A /* main.m in Sources */,
