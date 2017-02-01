@@ -18,7 +18,7 @@ var tutorials = [
     id: 1,
     title: "Android Studio Tutorial For Beginners",
     description: "Learn how to install Android Studio and then go through this tutorial to build your very first app",
-    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/F-k5gwz_91o" frameborder="0" allowfullscreen></iframe>',
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/F-k5gwz_91o" frameborder="0" allowfullscreen></iframe></div>',
     thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/androidwhite-learn.png"
   },
   {

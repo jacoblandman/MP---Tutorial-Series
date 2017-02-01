@@ -10,6 +10,7 @@
 #import "HTTPService.h"
 #import "Video.h"
 #import "VideoCell.h"
+#import "VideoVC.h"
 
 @interface ViewController ()
 
@@ -67,7 +68,8 @@
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"VideoVC" sender:video];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -87,6 +89,14 @@
     }
     
     return cell;
+    
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    VideoVC *vc = (VideoVC*)segue.destinationViewController;
+    Video *video = (Video*)sender;
+    
+    vc.video = video;
     
 }
 

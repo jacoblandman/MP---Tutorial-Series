@@ -16,6 +16,7 @@
 		AEB9CAAE1E41466800C41F1A /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAAD1E41466800C41F1A /* HTTPService.m */; };
 		AEB9CAB51E415B2A00C41F1A /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAB41E415B2A00C41F1A /* VideoCell.m */; };
 		AEB9CAB81E415E6100C41F1A /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAB71E415E6100C41F1A /* Video.m */; };
+		AEB9CABB1E424E1900C41F1A /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CABA1E424E1900C41F1A /* VideoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		AEB9CAB41E415B2A00C41F1A /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		AEB9CAB61E415E6100C41F1A /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		AEB9CAB71E415E6100C41F1A /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		AEB9CAB91E424E1900C41F1A /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		AEB9CABA1E424E1900C41F1A /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 			children = (
 				AEB9CA9A1E41461000C41F1A /* ViewController.h */,
 				AEB9CA9B1E41461000C41F1A /* ViewController.m */,
+				AEB9CAB91E424E1900C41F1A /* VideoVC.h */,
+				AEB9CABA1E424E1900C41F1A /* VideoVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				AEB9CAB51E415B2A00C41F1A /* VideoCell.m in Sources */,
 				AEB9CAAE1E41466800C41F1A /* HTTPService.m in Sources */,
 				AEB9CAB81E415E6100C41F1A /* Video.m in Sources */,
+				AEB9CABB1E424E1900C41F1A /* VideoVC.m in Sources */,
 				AEB9CA991E41461000C41F1A /* AppDelegate.m in Sources */,
 				AEB9CA961E41461000C41F1A /* main.m in Sources */,
 			);

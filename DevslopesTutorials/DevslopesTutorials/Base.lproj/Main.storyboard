@@ -114,11 +114,91 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="DZL-yW-6u6" id="xRh-0k-Wb6"/>
+                        <segue destination="c5K-Zv-5PN" kind="presentation" identifier="VideoVC" id="hBy-Pk-lzB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="m2i-6m-eZU">
+            <objects>
+                <viewController id="c5K-Zv-5PN" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oxh-8J-0vt"/>
+                        <viewControllerLayoutGuide type="bottom" id="dWH-Wo-rwa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="daQ-eS-O8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fa-Be-Et2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="WKS-5o-rEV"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photoshop Tutorial For Beginners How To Create a Log" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgl-2g-kSK">
+                                <rect key="frame" x="16" y="289" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="pX9-dL-qxW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-pb-4FO">
+                                <rect key="frame" x="16" y="355" width="343" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="PAw-Ti-JSM"/>
+                                </constraints>
+                                <string key="text">Learn how to make a professional logo in Photoshop without any design experience. This is a Photoshop tutorial for beginners that will give you all the basics of Photoshop that you need to make a logo. Learn how to make a professional </string>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kw-ds-Ooq">
+                                <rect key="frame" x="16" y="592" width="343" height="55"/>
+                                <color key="backgroundColor" red="0.9300042986869812" green="0.24605908056079298" blue="0.23129721105212248" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="kX6-XR-uYx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="c5K-Zv-5PN" eventType="touchUpInside" id="6Sq-ut-4ES"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5fa-Be-Et2" secondAttribute="trailing" id="2f1-PT-Skh"/>
+                            <constraint firstItem="Vgl-2g-kSK" firstAttribute="top" secondItem="5fa-Be-Et2" secondAttribute="bottom" constant="15" id="3r8-3H-ngU"/>
+                            <constraint firstItem="Vgl-2g-kSK" firstAttribute="trailing" secondItem="daQ-eS-O8Y" secondAttribute="trailingMargin" id="79C-ed-mGl"/>
+                            <constraint firstItem="bS9-pb-4FO" firstAttribute="leading" secondItem="daQ-eS-O8Y" secondAttribute="leadingMargin" id="DOr-Pm-Mzx"/>
+                            <constraint firstItem="Vgl-2g-kSK" firstAttribute="leading" secondItem="daQ-eS-O8Y" secondAttribute="leadingMargin" id="Fn7-kz-Wvy"/>
+                            <constraint firstItem="6Kw-ds-Ooq" firstAttribute="trailing" secondItem="daQ-eS-O8Y" secondAttribute="trailingMargin" id="JAQ-iH-TzJ"/>
+                            <constraint firstItem="bS9-pb-4FO" firstAttribute="trailing" secondItem="daQ-eS-O8Y" secondAttribute="trailingMargin" id="U4i-6c-yHL"/>
+                            <constraint firstItem="bS9-pb-4FO" firstAttribute="top" secondItem="Vgl-2g-kSK" secondAttribute="bottom" constant="15" id="V4J-fx-JOP"/>
+                            <constraint firstItem="5fa-Be-Et2" firstAttribute="top" secondItem="daQ-eS-O8Y" secondAttribute="top" id="b9e-yB-72Z"/>
+                            <constraint firstItem="6Kw-ds-Ooq" firstAttribute="leading" secondItem="daQ-eS-O8Y" secondAttribute="leadingMargin" id="hLx-O3-Ng8"/>
+                            <constraint firstItem="5fa-Be-Et2" firstAttribute="leading" secondItem="daQ-eS-O8Y" secondAttribute="leading" id="lgu-rc-2rf"/>
+                            <constraint firstItem="dWH-Wo-rwa" firstAttribute="top" secondItem="6Kw-ds-Ooq" secondAttribute="bottom" constant="20" id="z0K-2R-gir"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="discLbl" destination="bS9-pb-4FO" id="OR4-Jd-lFA"/>
+                        <outlet property="titleLbl" destination="Vgl-2g-kSK" id="FMc-1P-bn3"/>
+                        <outlet property="webView" destination="5fa-Be-Et2" id="dCd-YA-Qb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XqO-Ac-pf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="113.79310344827587"/>
         </scene>
     </scenes>
 </document>
