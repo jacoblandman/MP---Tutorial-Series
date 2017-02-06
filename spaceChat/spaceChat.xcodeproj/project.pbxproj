@@ -17,6 +17,15 @@
 		AE90E4221E3678AA000FD374 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E41F1E3678AA000FD374 /* PhotoCaptureDelegate.swift */; };
 		AE90E4231E3678AA000FD374 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E4201E3678AA000FD374 /* PreviewView.swift */; };
 		AE90E4291E368F6E000FD374 /* AAPLCameraVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E4281E368F6E000FD374 /* AAPLCameraVCDelegate.swift */; };
+		AEB9CAE81E42A35B00C41F1A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CADF1E42A35B00C41F1A /* AuthService.swift */; };
+		AEB9CAE91E42A35B00C41F1A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAE01E42A35B00C41F1A /* DataService.swift */; };
+		AEB9CAEA1E42A35B00C41F1A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAE11E42A35B00C41F1A /* LoginVC.swift */; };
+		AEB9CAEB1E42A35B00C41F1A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAE21E42A35B00C41F1A /* RoundedButton.swift */; };
+		AEB9CAEC1E42A35B00C41F1A /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAE31E42A35B00C41F1A /* RoundTextField.swift */; };
+		AEB9CAED1E42A35B00C41F1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAE41E42A35B00C41F1A /* User.swift */; };
+		AEB9CAEE1E42A35B00C41F1A /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAE51E42A35B00C41F1A /* UserCell.swift */; };
+		AEB9CAEF1E42A35B00C41F1A /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB9CAE61E42A35B00C41F1A /* UsersVC.swift */; };
+		AEB9CAF01E42A35B00C41F1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB9CAE71E42A35B00C41F1A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,15 @@
 		AE90E41F1E3678AA000FD374 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		AE90E4201E3678AA000FD374 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		AE90E4281E368F6E000FD374 /* AAPLCameraVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPLCameraVCDelegate.swift; sourceTree = "<group>"; };
+		AEB9CADF1E42A35B00C41F1A /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AEB9CAE01E42A35B00C41F1A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AEB9CAE11E42A35B00C41F1A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		AEB9CAE21E42A35B00C41F1A /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		AEB9CAE31E42A35B00C41F1A /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		AEB9CAE41E42A35B00C41F1A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AEB9CAE51E42A35B00C41F1A /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		AEB9CAE61E42A35B00C41F1A /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		AEB9CAE71E42A35B00C41F1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8B32BC734F0EBA6B395CCFF /* Pods_spaceChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spaceChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9098F32FA78C9301BCB0D45 /* Pods-spaceChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spaceChat/Pods-spaceChat.debug.xcconfig"; sourceTree = "<group>"; };
 		FD798DE7036681E97E9BA235 /* Pods-spaceChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-spaceChat/Pods-spaceChat.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +95,7 @@
 		AE90E40B1E367404000FD374 /* spaceChat */ = {
 			isa = PBXGroup;
 			children = (
+				AEB9CAF11E42A37100C41F1A /* Services */,
 				AE90E4271E368F3D000FD374 /* Protocols */,
 				AE90E4261E3678B8000FD374 /* Model */,
 				AE90E4251E3678B4000FD374 /* View */,
@@ -84,6 +103,7 @@
 				AE90E40C1E367404000FD374 /* AppDelegate.swift */,
 				AE90E4131E367404000FD374 /* Assets.xcassets */,
 				AE90E4181E367404000FD374 /* Info.plist */,
+				AEB9CAE71E42A35B00C41F1A /* GoogleService-Info.plist */,
 			);
 			path = spaceChat;
 			sourceTree = "<group>";
@@ -91,6 +111,8 @@
 		AE90E4241E3678AD000FD374 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AEB9CAE61E42A35B00C41F1A /* UsersVC.swift */,
+				AEB9CAE11E42A35B00C41F1A /* LoginVC.swift */,
 				AE90E40E1E367404000FD374 /* CameraVC.swift */,
 				AE90E41E1E3678AA000FD374 /* CameraViewController.swift */,
 			);
@@ -101,7 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				AE90E4201E3678AA000FD374 /* PreviewView.swift */,
+				AEB9CAE51E42A35B00C41F1A /* UserCell.swift */,
 				AE90E4101E367404000FD374 /* Main.storyboard */,
+				AEB9CAE21E42A35B00C41F1A /* RoundedButton.swift */,
+				AEB9CAE31E42A35B00C41F1A /* RoundTextField.swift */,
 				AE90E4151E367404000FD374 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -111,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				AE90E41F1E3678AA000FD374 /* PhotoCaptureDelegate.swift */,
+				AEB9CAE41E42A35B00C41F1A /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -121,6 +147,15 @@
 				AE90E4281E368F6E000FD374 /* AAPLCameraVCDelegate.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		AEB9CAF11E42A37100C41F1A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AEB9CADF1E42A35B00C41F1A /* AuthService.swift */,
+				AEB9CAE01E42A35B00C41F1A /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		BF4AA3FA06A3041049B5F58E /* Pods */ = {
@@ -196,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE90E4171E367404000FD374 /* LaunchScreen.storyboard in Resources */,
+				AEB9CAF01E42A35B00C41F1A /* GoogleService-Info.plist in Resources */,
 				AE90E4141E367404000FD374 /* Assets.xcassets in Resources */,
 				AE90E4121E367404000FD374 /* Main.storyboard in Resources */,
 			);
@@ -257,11 +293,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE90E4231E3678AA000FD374 /* PreviewView.swift in Sources */,
+				AEB9CAEE1E42A35B00C41F1A /* UserCell.swift in Sources */,
+				AEB9CAEB1E42A35B00C41F1A /* RoundedButton.swift in Sources */,
+				AEB9CAEF1E42A35B00C41F1A /* UsersVC.swift in Sources */,
 				AE90E40F1E367404000FD374 /* CameraVC.swift in Sources */,
+				AEB9CAEC1E42A35B00C41F1A /* RoundTextField.swift in Sources */,
 				AE90E40D1E367404000FD374 /* AppDelegate.swift in Sources */,
 				AE90E4221E3678AA000FD374 /* PhotoCaptureDelegate.swift in Sources */,
 				AE90E4291E368F6E000FD374 /* AAPLCameraVCDelegate.swift in Sources */,
+				AEB9CAEA1E42A35B00C41F1A /* LoginVC.swift in Sources */,
+				AEB9CAED1E42A35B00C41F1A /* User.swift in Sources */,
 				AE90E4211E3678AA000FD374 /* CameraViewController.swift in Sources */,
+				AEB9CAE81E42A35B00C41F1A /* AuthService.swift in Sources */,
+				AEB9CAE91E42A35B00C41F1A /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +471,7 @@
 				AE90E41D1E367404000FD374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

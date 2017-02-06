@@ -44,6 +44,41 @@ var tutorials = [
   }
 ];
 
+var comments = [
+  {
+    username: "jackd942",
+    comment: "this video was really cool. Any chance you could drop what you are doing and code my problem for me?"
+  }
+
+]
+
+// app.put('/comments'), function(req, res) {
+//   var someOBJ = req.body;
+//
+//   var theId = someOBJ.uniqueID;
+//
+//   // talk to the databas, find the record by the id
+//   // then you replace the existing record with req.body
+//   res.send("Successrully update");
+// }
+
+app.post('/comments', function(req, res) {
+  var comment = req.body;
+  if (comment) {
+    if (comment.username && comment.comment) {
+      comments.push(comment);
+    } else {
+      res.send("You posted invalid data");
+    }
+  } else {
+    res.send("Your post has no body!");
+  }
+
+  console.log(comments);
+  res.send("You successfully posted a comment");
+
+});
+
 app.get('/tutorials', function(req, res) {
   console.log("GET from server");
   res.send(tutorials);
