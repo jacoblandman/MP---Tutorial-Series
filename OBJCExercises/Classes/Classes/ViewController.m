@@ -20,26 +20,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    NSMutableString *name = [NSMutableString stringWithString:@"Jacob"];
     XYZPerson *person = [XYZPerson new];
     [person sayHello];
-    person.firstName = [NSMutableString stringWithString:@"Jacob"];
+    person.firstName = name;
     [person sayHello];
-    [person printLastNameFirstName];
+    
+    [name setString:@"Jack" ];
+    [person sayHello];
     
     XYZPerson *person2 = person;
     
     person = nil;
     person2 = nil;
     
-    UIFont *font = [UIFont fontWithName:@"Palatino-Roman" size:14.0];
-    NSDictionary *attributes = [NSDictionary dictionaryWithObjects:
-                                @[font, [UIColor blackColor]]
-                                                           forKeys:
-                                @[NSFontAttributeName, NSForegroundColorAttributeName]];
-    
-    NSString *newString = @"hello";
-    
-    [newString drawInRect:self.accessibilityFrame withAttributes:attributes];
     
 }
 
